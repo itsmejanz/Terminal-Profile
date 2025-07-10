@@ -1,0 +1,119 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Consolas", "Courier New", Courier, monospace;
+    overflow: hidden !important;
+}
+
+.terminal-window {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.terminal-bar {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-bar-title {
+    margin: 0;
+}
+
+.terminal-screen {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+.prompt-line {
+    display: flex;
+    align-items: center;
+}
+
+.terminal-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: auto;
+    flex-grow: 1;
+    font-family: "Consolas", "Courier New", Courier, monospace;
+    font-size: 16px;
+    padding: 0;
+    color: inherit;
+}
+
+/* Yakuza Theme */
+.yakuza {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.yakuza .terminal-screen::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+.yakuza .terminal-screen::-webkit-scrollbar {
+    width: 8px;
+    background-color: #000;
+}
+
+.yakuza .terminal-screen::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00ff00;
+    border: 1.5px solid #000;
+}
+
+/* McDonald's (MCD) Theme */
+.mcd {
+    background-color: #cf240a;
+    color: #fff10a;
+}
+
+.mcd .code {
+    color: #fff;
+}
+
+.mcd .terminal-screen::-webkit-scrollbar-track {
+    background-color: #fff10a;
+}
+
+.mcd .terminal-screen::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff10a;
+}
+
+.mcd .terminal-screen::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cf240a;
+    border: 1.5px solid #fff10a;
+}
+
+/* Default Theme */
+.default {
+    background-color: #000;
+    color: #fff;
+}
+
+.default .terminal-screen::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.default .terminal-screen::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+
+.default .terminal-screen::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+    border: 1px solid #fff;
+}
