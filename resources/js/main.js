@@ -8,7 +8,7 @@ function processCommand(event) {
         const output = $("#terminal-output");
         if (input === "" || input.length < 1) {
         } else {
-            const newCommand = $("<div></div>").html(`<span class="prompt">C:\\Users\\cmd&gt;</span>${input}`);
+            const newCommand = $("<div></div>").html(`<span class="prompt">C:\\Carissa\\cmd&gt;</span>${input}`);
             output.append(newCommand);
 
             $("#terminal-input").val("");
@@ -19,8 +19,7 @@ function processCommand(event) {
                         <div class="help-list">
                             <p class="mb-0">For more information on a specific command, type HELP command-name</p>
                             <ul class="mb-0">
-                                <li><code class="code">profile</code>: Show My Profile</li>
-                                <li><code class="code">contact</code>: Show My Contact</li>
+                                <li><code class="code">message</code>: Show My Message</li>
                                 <li><code class="code">theme</code>: Show list theme supported</li>
                                 <li><code class="code">clear</code>: Clear all terminal output</li>
                                 <li><code class="code">shutdown</code>: Close terminal & shutdown</li>
@@ -29,19 +28,15 @@ function processCommand(event) {
                     `;
                 const helpOutput = $("<div></div>").html(helpList);
                 output.append(helpOutput);
-            } else if (input.toLowerCase() === "profile") {
-                const profiles = `<p class="fw-bold mb-0">Introduction</p>
-                <p>Hello! I’m Wafa Rifqi Anafin, a Creative Web Designer and Developer from Indonesia. With a solid foundation in Information Technology, I craft innovative websites that blend functionality and aesthetics. As a graduate in Information Systems from Nusa Mandiri University, I currently reside in Bekasi, channeling my creativity into impactful web prototypes.</p>
-                <br>
-                <p class="fw-bold mb-0">Skills and Experience</p>
-                <p>I specialize in HTML5, CSS, Bootstrap, JavaScript, and PHP Native, with strong proficiency in PHP, Java, Dart, and Node.js. My expertise enables me to create exceptional user experiences and drive innovation in the digital realm. Each project is an opportunity to deliver solutions that provide real value to clients and users alike.</p>
-                <br>
-                <p class="fw-bold mb-0">Vision, Mission, and Motto</p>
-                <p>I believe success is measured by the positive impact we make on others. My vision is to be a beacon of goodness and inspiration, leading with integrity and wisdom to foster a harmonious world. My mission is to spread happiness through selfless kindness and inspire personal growth.</p>
-                <p>My motto, "The first step: be inspired; the next: inspire others. A meaningful life begins with action," reflects my commitment to making a positive mark in the world.</p>
-                <br>
-                <p class="fw-bold mb-0">Conclusion</p>
-                <p>I’m always eager to explore new possibilities and tackle challenges in the tech industry, especially in web development. Thank you for allowing me to share my story. I look forward to collaborating and creating innovative solutions that benefit many.</p>`;
+            } else if (input.toLowerCase() === "message") {
+                const profiles = `<p class="fw-bold mb-0">HAIII WELCOMEEE</p>
+
+                <p>Halo!! makasii yaaa udah kamu buka wkwkwk ciee jadi heker sekarangg.<br>
+BTWW SEMANGAATTTTT YAAA LOMBANYAAA IM PROUD OF YOUU KALOO ADAA APAAA APA KASII TAU AKU YAAA,<br>
+AKU BISAA BANTUIN KAMUU SEBISAKUU, INII ADA COKELAT DARIKU SEMOGAA KAMU SUKAAA YAAAAA,<br>
+BUATT NAIKIN MOOD KAMU BIAR LOLOSS KE FINAL DANN JUARA 1 AAAMIINNNNNNNNN<br>
+I AM ALWAYS THERE FOR YOU AND ANYTIME, I PROMISE<br>
+kamuu ketik clear yaaa, hekernya pamit dulu yaaaaa</p>`;
                 const profilesOutput = $('<div class="mb-3"></div>').html(profiles);
                 output.append(profilesOutput);
             } else if (input.toLowerCase().startsWith("theme ")) {
